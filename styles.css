@@ -1,0 +1,72 @@
+/* CSS Reset - Remove default margins and padding */
+body, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    /* Add styles for your body content */
+    min-height: 100vh; /* Ensure body stretches to at least the height of the viewport */
+    position: relative; /* Make the body a positioning context for the footer */
+    padding-bottom: 50px; /* Adjust padding bottom to accommodate footer height */
+}
+
+
+/* Footer styles */
+footer {
+    /* Footer styles */
+    position: fixed; /* Position the footer relative to the body */
+    bottom: 0; /* Align the footer to the bottom of the body */
+    width: 100%; /* Make the footer stretch the full width of the body */
+    height: 40px; /* Set the height of the footer */
+    background-color: #BFD8AF; /* Background color of the footer */
+    color: #0c0101; /* Text color of the footer */
+    text-align: center; /* Center align text within the footer */
+    line-height: 50px; /* Vertical alignment of text within the footer */
+}
+
+/* Map styles */
+.map {
+    width: 100%; /* Make map fill entire width of viewport */
+    height: calc(100vh - 200px); /* Set map height to fill remaining viewport height */
+  
+}
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        padding-bottom: 100px; /* Increase padding to accommodate footer on smaller screens */
+    }
+
+    footer {
+        position: fixed; /* Change position to relative for footer on smaller screens */
+    }
+}
+#coordinates {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+#position {
+    margin-top: 20px;
+    text-align: center;
+}
+#coordinates {
+    border-collapse: collapse;
+  
+}
+
+#coordinates td {
+    border: 1px solid #ddd; /* Add border to each cell */
+    padding: 8px; /* Add padding to each cell */
+}
+
+#coordinates tr:first-child {
+    border-bottom: 2px solid #ddd; /* Add horizontal dividing line after first row */
+}
+
+#coordinates tr td:first-child {
+    border-right: 2px solid #ddd; /* Add vertical dividing line after first column */
+}
+
+
