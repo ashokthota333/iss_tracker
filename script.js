@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     map.addLayer(vectorLayer);
 
     function fetchISSPosition() {
-        fetch('https://api.open-notify.org/iss-now.json')
+        fetch('http://api.open-notify.org/iss-now.json')
             .then(response => response.json())
             .then(data => {
                 var latitude = parseFloat(data.iss_position.latitude);
